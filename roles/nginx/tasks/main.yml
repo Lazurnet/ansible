@@ -1,0 +1,17 @@
+- name: Installer Nginx
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Copier la configuration du site web
+  template:
+    src: site.conf.j2
+    dest: /etc/nginx/sites-available/default
+  notify: Redemarrer Nginx
+
+- name: Démarrer et activer Nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes

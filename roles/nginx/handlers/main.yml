@@ -1,0 +1,8 @@
+
+
+
+# Un handler sert à redémarrer Nginx uniquement si sa configuration a changé.
+- name: Redemarrer Nginx
+  service:
+    name: nginx
+    state: restarted
