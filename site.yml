@@ -1,13 +1,20 @@
 # Créer le Playbook principal (site.yml)
 
-# Le playbook, c'est le chef d'orchestre.
-# permet de dire par ex pour le groupe web, applique le rôle nginx ; pour le groupe db, applique le rôle mariadb..."
-
+# Le playbook / chef d'orchestre.
 
 - hosts: web
-  become: yes
+  become: yes  #exécuter les tâches en tant qu'administrateur sur les machines distantes
+
   roles:
     - nginx
 
   #faire de meme pour chaque role
-  #become: yes sert à exécuter les tâches en tant qu'administrateur (sudo) sur les machines distantes.
+- hosts: db
+  become: yes
+  roles:
+    - mariadb
+
+- hosts: monitoring
+  become: yes
+  roles:
+    - monitoring
