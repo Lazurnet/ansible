@@ -1,13 +1,18 @@
 
-# HANDY ANSIBLE
+# HANDY ANSIBLE (Octobre - décembre 2026)
 
 
-Ce projet Ansible automatise le déploiement d’une stack complète composée de :  
+Ce projet Ansible automatise le déploiement d’une stack complète de 3 serveurs :
 
-Serveur Web : Nginx + page HTML  
+- Serveur Web : Nginx + page HTML  
 
-Serveur Base de Données : MariaDB + création d’un utilisateur + base  
+- Serveur Base de Données : MariaDB + création d’un utilisateur + base  
 
-Serveur Monitoring : Netdata (ou Prometheus + Node Exporter selon configuration)  
+- Serveur Monitoring : Netdata (ou Prometheus + Node Exporter selon configuration)  
 
-L’objectif est de fournir un exemple concret d’orchestration multi‑machines avec Ansible, en utilisant les bonnes pratiques (roles, templates, handlers, variables).  
+
+# Prérequis
+- Ansible ≥ 2.10  
+- 3 VMs Ubuntu Server  
+- Accès SSH + clé publique  
+- Python  
