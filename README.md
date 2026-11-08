@@ -16,3 +16,6 @@ Ce projet Ansible automatise le déploiement d’une stack complète de 3 serveu
 - 3 VMs Ubuntu Server  
 - Accès SSH + clé publique  
 - Python  
+
+
+# fonctionnalites
