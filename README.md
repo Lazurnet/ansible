@@ -19,3 +19,4 @@ Ce projet Ansible automatise le déploiement d’une stack complète de 3 serveu
 
 
 # fonctionnalites
+## demo
